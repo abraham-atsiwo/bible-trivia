@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import healthlogo from "../../assets/logo/bible_trivia.png";
 import ImageTextSlider from "./ImageTextSlider";
 

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuestionCircle, faCheckCircle, faCheck, faDotCircle } from '@fortawesome/free-solid-svg-icons'; // Import icons
+import { faQuestionCircle, faCheck, faDotCircle } from '@fortawesome/free-solid-svg-icons'; // Import icons
 
 import './styles/QuestionCard.css';  // We'll add some CSS to handle flipping
 

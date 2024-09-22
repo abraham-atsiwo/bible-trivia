@@ -4,10 +4,6 @@ import slide1 from "../../assets/logo/new_testament.png";
 import slide2 from "../../assets/logo/old_testament.png";
 import slide3 from "../../assets/logo/general_knowledge.png";
 
-const texts = [
-  "Church History",
-  "for Smarter HealthCare Solutions",
-];
 const slides = [
     {
       image: slide1,

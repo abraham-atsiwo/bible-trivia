@@ -17,7 +17,7 @@ function SidebarContent() {
   const [selectedChapter, setSelectedChapter] = useState("");
   const [numberOfQuestions, setNumberOfQuestions] = useState(5);
   const [difficultyLevel, setDifficultyLevel] = useState(""); // State for Difficulty Level
-  const [questionError, setQuestionError] = useState(""); // State to hold validation error
+  // const [questionError, setQuestionError] = useState(""); // State to hold validation error
   const [filteredQuestions, setFilteredQuestions] = useState([]); // Store filtered quiz data
   const [quizStarted, setQuizStarted] = useState(false);
   const [displayFlashcard, setDisplayFlashcard] = useState(false);
@@ -30,7 +30,7 @@ function SidebarContent() {
     setSelectedChapter("");
     setNumberOfQuestions(10);
     setDifficultyLevel("");
-    setQuestionError("");
+    // setQuestionError("");
     setQuizStarted(false);
   };
 
@@ -39,7 +39,7 @@ function SidebarContent() {
     setSelectedChapter(chapterName);
     setNumberOfQuestions(10);
     setDifficultyLevel("");
-    setQuestionError("");
+    // setQuestionError("");
     setQuizStarted(false);
   };
 
@@ -49,13 +49,13 @@ function SidebarContent() {
     const maxQuestions = selectedBook?.content.length;
 
     if (isNaN(numQuestions) || numQuestions <= 0) {
-      setQuestionError("Please enter a valid number greater than 0.");
+      // setQuestionError("Please enter a valid number greater than 0.");
     } else if (numQuestions > maxQuestions) {
-      setQuestionError(
-        `You cannot select more than ${maxQuestions} questions.`
-      );
+      // setQuestionError(
+      //   `You cannot select more than ${maxQuestions} questions.`
+      // );
     } else {
-      setQuestionError("");
+      // setQuestionError("");
     }
 
     setNumberOfQuestions(value);

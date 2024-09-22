@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import background from "./assets/background_image/image.png";
 
 
@@ -11,7 +10,6 @@ import "./styles/global.css";
 
 function App() {
   return (
-    <Router>
     <div
       className="hero"
       style={{
@@ -27,7 +25,6 @@ function App() {
         <SidebarContent/>
       </div>
     </div>
-    </Router>
   );
 }
 
