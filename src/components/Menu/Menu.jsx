@@ -8,8 +8,21 @@ const Menu = () => {
   return (
     <nav className="menu-container">
       <div className="menu-left-container menu-item">
-        <img src={healthlogo} alt="Health Logo" />
-        <div style={{ marginLeft: '10px' }}>Bible Trivia</div>
+        <a href="/"><img src={healthlogo} alt="Health Logo" /></a>
+        <div style={{ marginLeft: "10px" }}>
+          <a
+            href="/"
+            style={{
+              padding: "10px 20px",
+              margin: "5px",
+              cursor: "pointer",
+              textDecoration: 'none',
+              color: 'white'
+            }}
+          >
+            Bible Trivia
+          </a>
+        </div>
         <ul
           style={{
             listStyleType: "none",
@@ -17,9 +30,7 @@ const Menu = () => {
             gap: "20px",
             margin: 0,
           }}
-        >
-          
-        </ul>
+        ></ul>
       </div>
       <div className="menu-center-container menu-item">
         {/* <TextSlider/> */}
