@@ -15,16 +15,16 @@ import mark14 from "./mark14";
 import mark15 from "./mark15";
 import mark16 from "./mark16";
 
-const all_chapters = [];
+export const all_chapters_mark = [];
 
 for (let i = 1; i <= 16; i++) {
   const mark = require(`./mark${i}`).default; // Use default if it's a default export
-  all_chapters.push(...mark);
+  all_chapters_mark.push(...mark);
 }
 
 
-const mark = [
-  // { name: "All Chapters", content:  all_chapters},
+export const mark = [
+  { name: "All Chapters", content:  all_chapters_mark},
   { name: "Chapter 1", content: mark1 },
   { name: "Chapter 2", content: mark2 },
   { name: "Chapter 3", content: mark3 },
@@ -43,4 +43,5 @@ const mark = [
   { name: "Chapter 16", content: mark16 },
 ];
 
-export default mark;
+
+// export default {mark, all_chapters_mark};

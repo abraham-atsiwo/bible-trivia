@@ -14,7 +14,7 @@ import nehemiah12 from "./nehemiah12"
 import nehemiah13 from "./nehemiah13"
 
 
-const all_chapters = [];
+export const all_chapters = [];
 
 for (let i = 1; i <= 13; i++) {
   const nehemiah = require(`./nehemiah${i}`).default; // Use default if it's a default export
@@ -22,7 +22,7 @@ for (let i = 1; i <= 13; i++) {
 }
 
 
-const nehemiah = [
+export const nehemiah = [
   { name: "All Chapters", content: all_chapters },
     { name: "Chapter 1", content: nehemiah1 },
     { name: "Chapter 2", content: nehemiah2 },
@@ -39,4 +39,4 @@ const nehemiah = [
     { name: "Chapter 13", content: nehemiah13 },
   ];
   
-  export default nehemiah;
+  // export default nehemiah;

@@ -9,4 +9,4 @@ const general_knowledge= [
     { name: "Old Testament", content: oldTestament },
   ];
   
-  export default general_knowledge;
+  export default general_knowledge
