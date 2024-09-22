@@ -72,6 +72,7 @@ const QuizList = ({ filteredData }) => {
           id="questions-to-show"
           type="number"
           min="1"
+          disabled={true}
           max={filteredData.length}
           value={questionsToShow}
           onChange={handleQuestionCountChange}

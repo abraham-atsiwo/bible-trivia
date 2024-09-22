@@ -53,6 +53,7 @@ const FlashCardList = ({ questions }) => {
         <input
           type="number"
           value={questionsPerPage}
+          disabled={true}
           min="1"
           max={totalQuestions}
           onChange={(e) => setQuestionsPerPage(Math.min(Math.max(1, e.target.value), totalQuestions))}

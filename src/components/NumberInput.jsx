@@ -10,6 +10,7 @@ const NumberInput = ({ numberOfQuestions, onNumberChange, error , questions}) =>
         <input className='book-select'
           type="number"
           min="1"
+          // disabled={true}
           value={numberOfQuestions}
           onChange={(e) => onNumberChange(e.target.value)}
           placeholder="Enter number of questions"
