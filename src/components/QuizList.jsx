@@ -39,7 +39,7 @@ const QuizList = ({ filteredData }) => {
   // Handle change in the number of questions to show
   const handleQuestionCountChange = (event) => {
     setQuestionsToShow(Number(event.target.value));
-    setCurrentIndex(0);
+    setCurrentIndex("");
   };
 
   // Handle moving to the next set of questions
