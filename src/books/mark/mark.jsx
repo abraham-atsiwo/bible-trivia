@@ -24,7 +24,7 @@ for (let i = 1; i <= 16; i++) {
 
 
 const mark = [
-  { name: "All Chapters", content:  all_chapters},
+  // { name: "All Chapters", content:  all_chapters},
   { name: "Chapter 1", content: mark1 },
   { name: "Chapter 2", content: mark2 },
   { name: "Chapter 3", content: mark3 },
