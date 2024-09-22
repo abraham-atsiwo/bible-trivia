@@ -8,7 +8,7 @@ const Menu = () => {
   return (
     <nav className="menu-container">
       <div className="menu-left-container menu-item">
-        <a href="/"><img src={healthlogo} alt="Health Logo" /></a>
+        <img src={healthlogo} alt="Health Logo" />
         <div style={{ marginLeft: "10px" }}>
           <a
             href="/"
